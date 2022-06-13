@@ -1,6 +1,12 @@
+.nav__container{
+  max-width: 1160px;
+  background-color: #F1F1F1;
+  padding: 25px 30px;
+  border-radius: 10px;
+}
+
 .header{
   padding-top: 60px;
-  margin-bottom: 50px;
 }
 
 .header__title{
@@ -25,9 +31,8 @@
   margin-bottom: 50px;
 }
 
-.header__nav{
-  background-color: #F1F1F1;
-  padding: 25px 30px;
+.nav{
+  padding: 35px 0;
 }
 
 .nav__title{
@@ -50,6 +55,15 @@
 }
 
 .nav__link{
-  /*color: #02535F;*/
-  text-decoration: underline;
+  position: relative;
+}
+
+.nav__link:after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+
+  bottom: -1px;
+  border: 1px solid #02535F;
 }
