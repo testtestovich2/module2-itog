@@ -14,33 +14,29 @@
       <section class="header__box">
         <div class="container">
           <h1 class="header__title">Отступы в вёрстке: margin и padding</h1>
-        </div>
-      </section>
 
-      <section class="header__box">
-        <div class="container">
-          <h2 class="header__title visually-hidden">О статье</h2>
           <p class="header__text">
             В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.
           </p>
+
           <p class="header__text">
             Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы. Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.
           </p>
         </div>
       </section>
 
-      <nav class="header__nav nav">
-        <div class="container nav__container">
-          <h2 class="nav__title">Содержание:</h2>
-          <ol class="nav__list">
-            <li class="nav__item">
-              <a href="#tab1" class="nav__link">Отступ задается от предыдущего элемента к следующему</a>
+      <nav class="header__nav big-content">
+        <div class="container big-content__container">
+          <h2 class="big-content__title mb-20">Содержание:</h2>
+          <ol class="big-content__list">
+            <li class="big-content__item">
+              <a href="#tab1" class="big-content__link">Отступ задается от предыдущего элемента к следующему</a>
             </li>
-            <li class="nav__item">
-              <a href="#tab2" class="nav__link">Отступ задается последнему возможному элементу в DOM-дереве</a>
+            <li class="big-content__item">
+              <a href="#tab2" class="big-content__link">Отступ задается последнему возможному элементу в DOM-дереве</a>
             </li>
-            <li class="nav__item">
-              <a href="#tab3" class="nav__link">Для последнего элемента группы отступ обнуляется</a>
+            <li class="big-content__item">
+              <a href="#tab3" class="big-content__link">Для последнего элемента группы отступ обнуляется</a>
             </li>
           </ol>
         </div>
@@ -74,7 +70,7 @@
             <p class="article__text">Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
           </div>
 
-          <div class="article__box-img">
+          <div class="article__box-img mb-30">
             <img class="article__img" src="img/2.jpg" alt="">
           </div>
         </div>
@@ -94,18 +90,14 @@
 
         <img class="center mb-30" src="img/4.jpg" alt="" >
 
-        <div class="article__box-img center">
-
-        </div>
-
         <p class="article__text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
 
-        <div class="article__box-wrapper mb-30">
-          <div class="article__box-img center">
-            <img class="article__img" src="img/5.jpg" alt="">
-          </div>
-          <p class="article__img-text"><span class="bold">ВАЖНО:</span> здесь <span class="italic">.list-item</span> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</p>
-        </div>
+        <figure class="article__figure mb-30">
+          <img class="article__img" src="img/5.jpg" alt="">
+          <figcaption class="article__figcaption>">
+            <p class="article__figcaption-text"><span class="bold">ВАЖНО:</span> здесь <span class="italic">.list-item</span> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</p>
+          </figcaption>
+        </figure>
 
         <p class="article__text">Казалось бы, можно задать отступ параграфу <span class="italic">&lt;p&gt;</span>, либо обёртке <span class="italic">&lt;article&gt;</span> для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
 
@@ -154,22 +146,22 @@
         <img class="center mb-30" src="img/14.jpg" alt="">
       </div>
     </section>
+
+    <section class="footer big-content">
+      <div class="container big-content__container">
+        <h2 class="big-content__title mb-20">Подытожим:</h2>
+
+        <ul class="big-content__list mb-30">
+          <li class="big-content__item">отступы задаём от предыдущего элемента к следующему</li>
+          <li class="big-content__item">используем только margin-right и margin-bottom</li>
+          <li class="big-content__item">внешние отступы задаются только между соседями</li>
+          <li class="big-content__item">внутренний отступ задаём самому верхнему элементу в дом дереве</li>
+          <li class="big-content__item">последнему элементу группы отступ всегда обнуляем</li>
+        </ul>
+
+        <p class="big-content__text">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
+      </div>
+    </section>
   </main>
-
-  <footer class="footer">
-    <div class="container footer__container">
-      <h2 class="footer__title">Подытожим:</h2>
-
-      <ul class="footer__list mb-30">
-        <li class="footer__item">отступы задаём от предыдущего элемента к следующему</li>
-        <li class="footer__item">используем только margin-right и margin-bottom</li>
-        <li class="footer__item">внешние отступы задаются только между соседями</li>
-        <li class="footer__item">внутренний отступ задаём самому верхнему элементу в дом дереве</li>
-        <li class="footer__item">последнему элементу группы отступ всегда обнуляем</li>
-      </ul>
-
-      <p class="footer__text">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
-    </div>
-  </footer>
 </body>
 </html>

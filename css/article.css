@@ -11,7 +11,7 @@
 }
 
 .article__content{
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
 }
 
 .article__box-img{
@@ -31,11 +31,14 @@
 }
 
 .article__box-text_left{
-  margin-bottom: 40px;
+  /*margin-bottom: 40px;*/
 }
 
 .article__text{
   margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
 }
 
 .article__text:last-child{
@@ -68,4 +71,13 @@
 
 .mb-30{
   margin-bottom: 30px;
+}
+
+.article__figure{
+  border: 1px solid #000;
+}
+
+.article__figcaption-text{
+  color: #5E5E5E;
+  padding: 15px 30px;
 }
